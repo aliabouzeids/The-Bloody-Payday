@@ -22,7 +22,7 @@ public class Civilian : MonoBehaviour
 
     void Update()
     {
-        been_attacked = hp.hp == hp.max_hp;
+        been_attacked = hp.hp < hp.max_hp;
 
         if (been_attacked) Run();
         else Have_A_Walk();
